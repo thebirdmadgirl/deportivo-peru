@@ -1,0 +1,32 @@
+#menu, #check{
+    display: none;
+}
+#check:checked ~ .botonera{
+left: 0;
+transition: 0.5s ease-out;
+}
+@media only screen and (max-width:980px){
+    #menu{
+        display: block;
+        float: right;
+        font-size: 30px;
+        color: white;
+        margin: 10px;
+    }
+    .container{
+        width: 90%;
+    }
+    .botonera{
+        position: relative;
+        float: none;
+        left: -100%;
+        transition: 0.5s ease-out;
+    }
+    .botonera ul{
+        position: absolute;
+        flex-direction: column;
+        background: black;
+        width: 100%;
+        top: 70px;
+    }
+}

@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+header{
+    width: 100%;
+    height: 70px;
+    background: darkblue;
+    position: fixed;
+    z-index:100000;
+    top: 0;
+    left: 0;
+}
+
+.banner{
+    position: relative;
+    background: url(../img/banner.gif);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    width: 100%;
+    min-height: 100vh;
+}
+.overlay{
+    background: rgba(0, 0, 0, 0.8);
+    min-height: 100vh;
+}
+.cont-banner{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+}
+
+.container{
+    width: 80%;
+    margin: auto;
+}
+#logo{
+    float: left;
+}
+.botonera{
+    float: right;
+}
+.botonera ul{
+    display: flex;
+    list-style: none;
+}
+.botonera a{
+    text-decoration: none;
+    color: white;
+    display: block;
+    padding: 20px;
+    transition: 0.3s ease-in-out;
+}
+.botonera a:hover{
+    color: rgb(71, 177, 253);
+}
+main{
+    width: 80%;
+    margin:20px auto;
+}
+main h2{
+    text-align: center;
+}
+p{
+    margin: 20px auto;
+}
+.img-responsive{
+    width: 450px;
+    max-width: 100%;
+    display: block;
+    margin: auto;
+}
+section{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+article{
+    width: 450px;
+    margin-bottom: 10px;
+}
+.img-adaptable{
+    width: 100%;
+}
+.fondo-parallax{
+    background: url(../img/futbol.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding:20px 0px;
+}
+.parallax{
+    width: 80%;
+    margin: auto;
+    color: white;
+}
